@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 	svcSleepThread(2000000000);
 	printf("- Pre-Installation Setup -\n\n");
 	printf("boot9strap installed? ");
-	if(access("/boot9strap", F_OK) != -1) {
+	if(access("boot.firm", F_OK) != -1) {
 		printf("\x1b[1;32mYES\x1b[0m\n");
 	} else {
 		printf("\x1b[1;31mNO\x1b[0m\n");
